@@ -69,6 +69,8 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
     holiday_hash.each do |season, holiday_hash|
+      holiday_hash.each do |holiday, supply|
+        if supply.find?("BBQ")
       if person == "Freddy Mercury"
         contact_details_hash.each do |attribute, data|
           if attribute == :favorite_ice_cream_flavors
