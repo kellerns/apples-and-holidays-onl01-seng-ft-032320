@@ -62,8 +62,8 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = holiday.to_s
       name_array = holiday_string.split.capitalize!
       name_array.join(" ")
+    end
   end
-
 end
 
 def all_holidays_with_bbq(holiday_hash)
