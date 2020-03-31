@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
           cap_name_array << word.capitalize!
         end
         holiday_name = cap_name_array.join(" ")
-        puts "#{holiday_name}: #{supplies.join(", ")}"
+        puts "  #{holiday_name}: #{supplies.join(", ")}"
       end
     end
  end
